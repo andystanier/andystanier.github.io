@@ -1,0 +1,15 @@
+
+h1, p{
+	color: blue;
+	text-align: center;
+}
+
+a{
+	color: purple;
+	text-align: center;
+}
+	
+	
+.tab {
+	margin-left: 5px;
+}
