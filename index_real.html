@@ -18,19 +18,32 @@
 	<div data-role="page" id="cv">
 		<div data-role="container">
 				<ul class="tabs">
-					<li data-tab="details" class="tab-link current" >Personal Details</li>
-					<li data-tab="skills" class="tab-link" >Skills</li>
-					<li data-tab="work" class="tab-link" >Work History</li>
-					<li data-tab="education" class="tab-link" >Education</li>
-					<li data-tab="projects" class="tab-link" >Projects</li>
+					<li data-tab="details" id="detailsTab" class="tab-link current" >Personal Details</li>
+					<li data-tab="skills" id="skillsTab" class="tab-link" >Skills</li>
+					<li data-tab="work" id="workTab" class="tab-link" >Work History</li>
+					<li data-tab="education" id="educationTab" class="tab-link" >Education</li>
+					<li data-tab="projects" id="projectsTab" class="tab-link" >Projects</li>
+					<li data-tab="pdf" id="pdfTab" class="tab-link" >PDF Version</li>
 				</ul>
 				<div id="details" class="tab-content current">
-					<p>Andy Stanier has undertaken a masters degree in computer science.  
+					<a id="email" href="mailto:andy.stanier@gmail.com" >andy.stanier@gmail.com</a>
+					<a id="linkedIn" href="http://www.linkedin.com/pub/andy-stanier/1b/8b0/b99">LinkedIn</a>
+					<a id="website" href="http://www.andystanier.co.uk">www.andystanier.co.uk</a>
+					<h4 id="phone">07814 514881</h4>
+					<h4 id="address">Macclesfield, Cheshire</h4>
+					
+					<p>Andy Stanier has recently undertaken a masters degree in computer science.  
 					Originally with a background in chemistry, and with 15 years experience
 					in the pharmaceutical industry, upon being made redundant, he decided
 					to persue one of his other long-held interests in computer programming.
 					</p>
-					<a class="email" href="mailto:andy.stanier@gmail.com" >andy.stanier@gmail.com</a>
+					
+					<p>Having undertaken several different online courses in programming and
+					computer science and teaching himself through books and YouTube videos, 
+					he signed up to take a masters in computer science from the University of
+					Hertfordshire, enabling him to work from home.
+					</p>
+					
 				</div>
 				<div id="skills" class="tab-content">
 					<p>Andy has studied all these blah blah</p>
@@ -42,16 +55,93 @@
 					</ul>
 				</div>
 				<div id="work" class="tab-content">
-					<p>Worked in pharmaceutical industry for 15 years</p>
+					<div class="workExHead">
+						<h4 class="workExDate">Aug 2015 – Sept 2016</h4>
+						<h4 class="workExTitle">Distance Learning Masters Student in Computer Science, University of Hertfordshire</h4>
+						<p class="workExBody">
+						See <a id="education-link" data-tab="education">Education</a> section for more details.
+						</p>
+					</div>
+					
+					<div class="workExHead">
+						<h4 class="workExDate">May 2014 – Aug 2015</h4>
+						<h4 class="workExTitle">Synthetic Chemist at Molplex Pharmaceuticals, Alderley Park</h4>
+						<p class="workExBody">
+						This job ended due to redundancy. 
+						Initially helping to set up a functional lab and office environment. Implementing working practices.
+						Identifying and obtaining lab equipment and chemistry software tools.
+						Main responsibilities were compound planning, design, synthesis, identification and delivery.
+						Safety officer for the lab; including writing SOPs, safety policies, fire sweeper.
+						Auditing of lab equipment and organising removal of unwanted kit. 
+						</p>
+					</div>
+					<div class="workExHead">
+						<h4 class="workExDate">Dec 2013 – May 2014</h4>
+						<h4 class="workExTitle">Looking for work – Job searching, CV writing and IT courses.</h4>
+						<p class="workExBody">
+						During this period, attended Jobcentre run courses in CV writing, IT 
+						courses and applied for jobs in the pharmaceutical industry.
+						</p>
+					</div>
+					<div class="workExHead">
+						<h4 class="workExDate">Jan 2011 – Dec 2013</h4>
+						<h4 class="workExTitle">Synthetic Organic Chemist for CK Science at Eisai, Hatfield</h4>
+						<p class="workExBody">
+						This job ended in redundancy due to closure of the chemistry department.
+						Designed synthetic strategies that provided scaffolds for CNS focused libraries which could easily 
+						be functionalised to final compounds for ADME screening.
+						Improved synthetic route to tool compounds to support project assays with batches for in-vivo 
+						testing successfully delivered. Recognised within the chemistry group for problem solving and 
+						offering advice. Prepared and delivered presentations to communicate progress and problems to
+						colleagues at project and departmental meetings. Supported the day-to-day maintenance of analytical 
+						and preparative HPLC using expertise gained at previous employment.
+						</p>
+					</div>
+					<div class="workExHead">
+						<h4 class="workExDate">Aug 2008 – Jan 2011</h4>
+						<h4 class="workExTitle">Medicinal Chemist at AstraZeneca, Charnwood, Loughborough</h4>
+						<p class="workExBody">
+						This job ended in redundancy due to closure of the chemistry department.
+						Designed and synthesised novel compounds within restricted time frames for biological screening against 
+						respiratory targets.   The resulting patent was filed. Involved with seeking out and testing new laboratory 
+						equipment to increase departmental productivity.  Permission was secured to purchase new equipment.
+						Coached sandwich student, advising on practical technique, problem solving and questioning on reaction mechanism.
+						Developed expertise in Unipoint and Trilution software for use in preparative HPLC.
+						</p>
+					</div>    
+					<div class="workExHead">
+						<h4 class="workExDate">July 2001 – Aug 2008</h4>
+						<h4 class="workExTitle">Synthetic Chemist at AstraZeneca, Alderley Park, Macclesfield</h4>
+						<p class="workExBody">
+						This job ended in redundancy due to closure of the research area.
+						Worked within various project teams to deliver compounds for biological screening in Lead Generation 
+						in Oncology and Inflammation areas, with some projects progressing to lead optimisation stages.
+						Appointed route design expert in a High Throughput Chemistry and Purification Group.  Invented 
+						synthetic schemes that were amenable to high capacity synthesis and purification, resulting in small 
+						libraries of compounds for SAR purposes. Laboratory Safety Co-ordinator and Permit to Work issuer for 
+						local area.
+						</p>
+					</div>
 				</div>
+				
+				
 				<div id="education" class="tab-content">
-					<p>Educated in Chemistry at UoY</p>
-					<p>Educated in Computer Science at UoH</p>
+					
+					<h4>Educated in Computer Science at UoH</h4>
+					
+					<h4>Educated in Chemistry at UoY</h4>
+					University of York, UK – Chemistry with a Year in Industry.
+					MChem with First Class Honours.
+					Equivalent to BSc, plus an assessed year working as a synthetic chemist in a drug discovery research department.
 				</div>
 				<div id="projects" class="tab-content">
 					<p>Couple of websites and Java program as part of course</p>
 				</div>
-			<div data-role="footer" data-position="fixed">
+				
+				<div id="pdf" class="tab-content">
+					<p>Download and print a <a href="#">PDF version</a> of this CV</p>
+				</div>
+			<div data-role="footer" data-position="fixed" data-fullscreen="false" data-tap-toggle="false" >
 				<p class="name">Andy Stanier</p> 
 			</div>
 		</div>

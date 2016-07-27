@@ -18,4 +18,12 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 
+	$('a#education-link').click(function(){
+
+		$('#work').removeClass('current');
+		$('#workTab').removeClass('current');
+
+		$("#education").addClass('current');
+		$("#educationTab").addClass('current');
+	})
 })

@@ -1,11 +1,5 @@
 
-p{
-	text-align: justify;
-}
-
-.name{
-	text-align: center;
-}
+/*Setting up the Tabs along the top*/
 
 body{
 	margin-top: 100px;
@@ -45,4 +39,38 @@ ul.tabs li.current{
 
 .tab-content.current{
 	display: inherit;
+}
+
+#pdfTab{
+	float:right;
+}
+
+/* To See Where everything sits*/
+
+div, h4{
+	border: 1px solid #ededed;
+	
+}
+
+
+/* Other styling */
+
+p{
+	text-align: justify;
+}
+
+.name{
+	text-align: center;
+}
+
+.workExHead {
+	
+}
+
+.workExTitle .workExBody{
+	text-align: justify;
+}
+
+.workExDate{
+	float: right;
 }
