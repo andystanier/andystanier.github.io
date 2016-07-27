@@ -14,46 +14,113 @@
     <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
 </head>
 <body>
-	<!---------------Details Page ------------>
+	<!--------------- Tabbed Header ------------>
 	<div data-role="page" id="cv">
 		<div data-role="container">
 				<ul class="tabs">
-					<li data-tab="details" id="detailsTab" class="tab-link current" >Personal Details</li>
-					<li data-tab="skills" id="skillsTab" class="tab-link" >Skills</li>
+					<li data-tab="details" id="detailsTab" class="tab-link" >Personal Details</li>
+					<li data-tab="skills" id="skillsTab" class="tab-link current" >Skills</li>
 					<li data-tab="work" id="workTab" class="tab-link" >Work History</li>
 					<li data-tab="education" id="educationTab" class="tab-link" >Education</li>
 					<li data-tab="projects" id="projectsTab" class="tab-link" >Projects</li>
 					<li data-tab="pdf" id="pdfTab" class="tab-link" >PDF Version</li>
 				</ul>
-				<div id="details" class="tab-content current">
-					<a id="email" href="mailto:andy.stanier@gmail.com" >andy.stanier@gmail.com</a>
-					<a id="linkedIn" href="http://www.linkedin.com/pub/andy-stanier/1b/8b0/b99">LinkedIn</a>
-					<a id="website" href="http://www.andystanier.co.uk">www.andystanier.co.uk</a>
-					<h4 id="phone">07814 514881</h4>
-					<h4 id="address">Macclesfield, Cheshire</h4>
+				
+	<!--------------- Details Page ------------>
+				<!-- <div id="details" class="tab-content current"> -->
+				<div id="details" class="tab-content">
+					<div class="info">
+						<h2 id="name">Andy Stanier MChem MSc</h2>
+						<a id="email" href="mailto:andy.stanier@gmail.com">andy.stanier@gmail.com</a><br/>
+						<a id="website" href="http://www.andystanier.co.uk" target="_blank">www.andystanier.co.uk</a><br/>
+						<a id="linkedIn" href="http://www.linkedin.com/pub/andy-stanier/1b/8b0/b99" target="_blank">LinkedIn</a>
+						<h4 id="phone">07814 514881</h4>
+						<h4 id="address">Macclesfield, Cheshire</h4>
+					</div>
 					
-					<p>Andy Stanier has recently undertaken a masters degree in computer science.  
+					<p>Andy Stanier has recently completed a masters degree in computer science.  
 					Originally with a background in chemistry, and with 15 years experience
 					in the pharmaceutical industry, upon being made redundant, he decided
 					to persue one of his other long-held interests in computer programming.
 					</p>
-					
 					<p>Having undertaken several different online courses in programming and
 					computer science and teaching himself through books and YouTube videos, 
 					he signed up to take a masters in computer science from the University of
-					Hertfordshire, enabling him to work from home.
+					Hertfordshire, enabling him to gain a recognised formal qualification.
 					</p>
-					
 				</div>
-				<div id="skills" class="tab-content">
-					<p>Andy has studied all these blah blah</p>
-					<ul>
+				
+	<!--------------- Skills Page ------------>			
+				<div id="skills" class="tab-content current">
+				<!-- <div id="skills" class="tab-content"> -->
+					<p>Andy has gained many transferable skills during 15 years working in the pharmaceutical industry</p>
+					<p>As well as these, during his studies he has learned skills in the following</p>
+					<!-- maybe do this as a table -->
+					<!-- <ul>
 						<li>Java</li>
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
-					</ul>
+						<li>JQuery</li>
+						<li>C, C++ and C#</li>
+						<li>ASP.NET</li>
+						<li>SQL</li>
+						<li>Python</li>
+						<li>Git</li>
+						<li>XML</li>
+					
+						<li>MS Virtual Studio</li>
+						<li>Windows and Linux Operating Systems</li>
+						<li>Object Oriented Programming</li>
+						<li>Secure Programming</li>
+						<li>BlueJ</li>
+						<li>Ethics for Information Technology</li>
+						<li>Command Line Interface</li>
+						<li>JIRA</li>
+					</ul> -->
+					
+					<table class="table">
+						<tr>
+							<th colspan="2">Programming Languages</th>
+							<th>Techniques/Software</th>
+						</tr>
+						<tr>
+							<td>Java</td>
+							<td>HTML</td>
+							<td>MS Virtual Studio</td>
+						</tr>
+						<tr>
+							<td>CSS</td>
+							<td>JavaScript</td>
+							<td>Windows and Linux Operating Systems</td>
+						</tr>
+						<tr>
+							<td>JQuery</td>
+							<td>JSON</td>
+							<td>BlueJ</td>
+						</tr>
+						<tr>
+							<td>C, C++ and C#</td>
+							<td>ASP.NET</td>
+							<td>Command Line Interface</td>
+						</tr>
+						<tr>
+							<td>SQL</td>
+							<td>XML</td>
+							<td>JIRA</td>
+						</tr>
+						<tr>
+							<td>Python</td>
+							<td>Git</td>
+							<td>Object Oriented Programming</td>
+						</tr>
+					</table>
+					
+					
 				</div>
+				
+	<!--------------- Work Experience Page ------------>				
+				<!-- <div id="work" class="tab-content current"> -->
 				<div id="work" class="tab-content">
 					<div class="workExHead">
 						<h4 class="workExDate">Aug 2015 – Sept 2016</h4>
@@ -62,7 +129,6 @@
 						See <a id="education-link" data-tab="education">Education</a> section for more details.
 						</p>
 					</div>
-					
 					<div class="workExHead">
 						<h4 class="workExDate">May 2014 – Aug 2015</h4>
 						<h4 class="workExTitle">Synthetic Chemist at Molplex Pharmaceuticals, Alderley Park</h4>
@@ -124,7 +190,8 @@
 					</div>
 				</div>
 				
-				
+	<!--------------- Education Page ------------>
+				<!-- <div id="education" class="tab-content current"> -->
 				<div id="education" class="tab-content">
 					
 					<h4>Educated in Computer Science at UoH</h4>
@@ -134,16 +201,24 @@
 					MChem with First Class Honours.
 					Equivalent to BSc, plus an assessed year working as a synthetic chemist in a drug discovery research department.
 				</div>
+				
+	<!--------------- Projects Page ------------>
+				<!-- <div id="projects" class="tab-content current"> -->
 				<div id="projects" class="tab-content">
 					<p>Couple of websites and Java program as part of course</p>
 				</div>
 				
+	<!--------------- PDF Page ------------>
+				<!-- <div id="pdf" class="tab-content current"> -->
 				<div id="pdf" class="tab-content">
-					<p>Download and print a <a href="#">PDF version</a> of this CV</p>
+					<p>Download and print a <a href="documents/7IMDirectDebit.pdf" target="PDF">PDF version</a> of this CV</p>
 				</div>
+				
+	<!--------------- Footer ------------>
 			<div data-role="footer" data-position="fixed" data-fullscreen="false" data-tap-toggle="false" >
-				<p class="name">Andy Stanier</p> 
+				<p class="nameFooter">Andy Stanier</p> 
 			</div>
+			
 		</div>
 	</div>
 	

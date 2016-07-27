@@ -47,11 +47,11 @@ ul.tabs li.current{
 
 /* To See Where everything sits*/
 
-div, h4{
+div, h4, p{
+	/* border: 1px solid black; */
 	border: 1px solid #ededed;
 	
 }
-
 
 /* Other styling */
 
@@ -59,7 +59,16 @@ p{
 	text-align: justify;
 }
 
-.name{
+h4{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.info, .info *{
+	text-align: center;
+	
+}
+.nameFooter{
 	text-align: center;
 }
 
@@ -73,4 +82,18 @@ p{
 
 .workExDate{
 	float: right;
+}
+
+table, table th, table td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table{
+	width:100%;
+}
+
+table td{
+	width:auto;
 }
