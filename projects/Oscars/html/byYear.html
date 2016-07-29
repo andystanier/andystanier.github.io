@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!--http://jose.cs.herts.ac.uk/as15aic/practice/mobile/15001294Oscars/html/OscarsApp.html -->
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/oscars.css" />
+	
+    <title>Best Oscar Goes To...</title>
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+	<script type="text/javascript" src="../js/oscarFuncScripts.js"></script>
+	<script type="text/javascript" src="../js/oscarToggleScripts.js"></script>
+	<script type="text/javascript" src="../js/oscarSwipeScripts.js"></script>
+</head>
+<body>
+
+<!-- ************** Year *************** -->
+    <div data-role="page" id="byYear">
+        <div data-role="header">
+            <h1>Year</h1>
+        </div>
+		
+        <div data-role="main" class="ui-content">
+			<form class="ui-filterable">
+				<input id="yearFilter" data-type="search">
+			</form>
+			<!-- W3Schools.com -->
+			<ul data-role="listview" data-filter="true" data-input="#yearFilter">
+				<li><a href="years.html" rel="external" class="yearLink" id="0"  data-role="button" data-icon="arrow-r" data-iconpos="right">1928</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="1"  data-role="button" data-icon="arrow-r" data-iconpos="right">1929</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="2"  data-role="button" data-icon="arrow-r" data-iconpos="right">1930</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="3"  data-role="button" data-icon="arrow-r" data-iconpos="right">1931</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="4"  data-role="button" data-icon="arrow-r" data-iconpos="right">1932</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="5"  data-role="button" data-icon="arrow-r" data-iconpos="right">1933</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="6"  data-role="button" data-icon="arrow-r" data-iconpos="right">1934</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="7"  data-role="button" data-icon="arrow-r" data-iconpos="right">1935</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="8"  data-role="button" data-icon="arrow-r" data-iconpos="right">1936</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="9"  data-role="button" data-icon="arrow-r" data-iconpos="right">1937</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="10" data-role="button" data-icon="arrow-r" data-iconpos="right">1938</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="11" data-role="button" data-icon="arrow-r" data-iconpos="right">1939</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="12" data-role="button" data-icon="arrow-r" data-iconpos="right">1940</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="13" data-role="button" data-icon="arrow-r" data-iconpos="right">1941</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="14" data-role="button" data-icon="arrow-r" data-iconpos="right">1942</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="15" data-role="button" data-icon="arrow-r" data-iconpos="right">1943</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="16" data-role="button" data-icon="arrow-r" data-iconpos="right">1944</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="17" data-role="button" data-icon="arrow-r" data-iconpos="right">1945</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="18" data-role="button" data-icon="arrow-r" data-iconpos="right">1946</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="19" data-role="button" data-icon="arrow-r" data-iconpos="right">1947</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="20" data-role="button" data-icon="arrow-r" data-iconpos="right">1948</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="21" data-role="button" data-icon="arrow-r" data-iconpos="right">1949</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="22" data-role="button" data-icon="arrow-r" data-iconpos="right">1950</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="23" data-role="button" data-icon="arrow-r" data-iconpos="right">1951</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="24" data-role="button" data-icon="arrow-r" data-iconpos="right">1952</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="25" data-role="button" data-icon="arrow-r" data-iconpos="right">1953</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="26" data-role="button" data-icon="arrow-r" data-iconpos="right">1954</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="27" data-role="button" data-icon="arrow-r" data-iconpos="right">1955</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="28" data-role="button" data-icon="arrow-r" data-iconpos="right">1956</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="29" data-role="button" data-icon="arrow-r" data-iconpos="right">1957</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="30" data-role="button" data-icon="arrow-r" data-iconpos="right">1958</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="31" data-role="button" data-icon="arrow-r" data-iconpos="right">1959</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="32" data-role="button" data-icon="arrow-r" data-iconpos="right">1960</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="33" data-role="button" data-icon="arrow-r" data-iconpos="right">1961</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="34" data-role="button" data-icon="arrow-r" data-iconpos="right">1962</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="35" data-role="button" data-icon="arrow-r" data-iconpos="right">1963</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="36" data-role="button" data-icon="arrow-r" data-iconpos="right">1964</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="37" data-role="button" data-icon="arrow-r" data-iconpos="right">1965</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="38" data-role="button" data-icon="arrow-r" data-iconpos="right">1966</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="39" data-role="button" data-icon="arrow-r" data-iconpos="right">1967</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="40" data-role="button" data-icon="arrow-r" data-iconpos="right">1968</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="41" data-role="button" data-icon="arrow-r" data-iconpos="right">1969</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="42" data-role="button" data-icon="arrow-r" data-iconpos="right">1970</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="43" data-role="button" data-icon="arrow-r" data-iconpos="right">1971</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="44" data-role="button" data-icon="arrow-r" data-iconpos="right">1972</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="45" data-role="button" data-icon="arrow-r" data-iconpos="right">1973</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="46" data-role="button" data-icon="arrow-r" data-iconpos="right">1974</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="47" data-role="button" data-icon="arrow-r" data-iconpos="right">1975</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="48" data-role="button" data-icon="arrow-r" data-iconpos="right">1976</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="49" data-role="button" data-icon="arrow-r" data-iconpos="right">1977</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="50" data-role="button" data-icon="arrow-r" data-iconpos="right">1978</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="51" data-role="button" data-icon="arrow-r" data-iconpos="right">1979</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="52" data-role="button" data-icon="arrow-r" data-iconpos="right">1980</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="53" data-role="button" data-icon="arrow-r" data-iconpos="right">1981</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="54" data-role="button" data-icon="arrow-r" data-iconpos="right">1982</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="55" data-role="button" data-icon="arrow-r" data-iconpos="right">1983</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="56" data-role="button" data-icon="arrow-r" data-iconpos="right">1984</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="57" data-role="button" data-icon="arrow-r" data-iconpos="right">1985</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="58" data-role="button" data-icon="arrow-r" data-iconpos="right">1986</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="59" data-role="button" data-icon="arrow-r" data-iconpos="right">1987</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="60" data-role="button" data-icon="arrow-r" data-iconpos="right">1988</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="61" data-role="button" data-icon="arrow-r" data-iconpos="right">1989</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="62" data-role="button" data-icon="arrow-r" data-iconpos="right">1990</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="63" data-role="button" data-icon="arrow-r" data-iconpos="right">1991</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="64" data-role="button" data-icon="arrow-r" data-iconpos="right">1992</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="65" data-role="button" data-icon="arrow-r" data-iconpos="right">1993</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="66" data-role="button" data-icon="arrow-r" data-iconpos="right">1994</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="67" data-role="button" data-icon="arrow-r" data-iconpos="right">1995</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="68" data-role="button" data-icon="arrow-r" data-iconpos="right">1996</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="69" data-role="button" data-icon="arrow-r" data-iconpos="right">1997</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="70" data-role="button" data-icon="arrow-r" data-iconpos="right">1998</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="71" data-role="button" data-icon="arrow-r" data-iconpos="right">1999</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="72" data-role="button" data-icon="arrow-r" data-iconpos="right">2000</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="73" data-role="button" data-icon="arrow-r" data-iconpos="right">2001</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="74" data-role="button" data-icon="arrow-r" data-iconpos="right">2002</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="75" data-role="button" data-icon="arrow-r" data-iconpos="right">2003</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="76" data-role="button" data-icon="arrow-r" data-iconpos="right">2004</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="77" data-role="button" data-icon="arrow-r" data-iconpos="right">2005</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="78" data-role="button" data-icon="arrow-r" data-iconpos="right">2006</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="79" data-role="button" data-icon="arrow-r" data-iconpos="right">2007</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="80" data-role="button" data-icon="arrow-r" data-iconpos="right">2008</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="81" data-role="button" data-icon="arrow-r" data-iconpos="right">2009</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="82" data-role="button" data-icon="arrow-r" data-iconpos="right">2010</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="83" data-role="button" data-icon="arrow-r" data-iconpos="right">2011</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="84" data-role="button" data-icon="arrow-r" data-iconpos="right">2012</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="85" data-role="button" data-icon="arrow-r" data-iconpos="right">2013</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="86" data-role="button" data-icon="arrow-r" data-iconpos="right">2014</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="87" data-role="button" data-icon="arrow-r" data-iconpos="right">2015</a></li>
+
+			</ul>
+        </div>
+
+        <div class="footer"></div>
+    </div>
+	<script type="text/javascript" src="../js/JSFooter.js"></script>
+</body>
+</html>

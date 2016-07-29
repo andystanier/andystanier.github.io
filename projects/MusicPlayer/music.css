@@ -1,0 +1,17 @@
+/* *{
+	border: 1px solid black;
+} */
+
+.musicTable{
+	width: 100%;
+	
+}
+
+.trackTitle{
+	float: left;
+	margin: 8px;
+}
+
+.trackPlayer{
+	float: right;
+}

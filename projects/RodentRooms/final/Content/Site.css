@@ -1,0 +1,473 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+    }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron 
+    {
+        margin-top: 20px;
+        
+    }
+    .jmbtAnimal {
+        
+        background-color: tan;
+        margin: 10px;
+        padding: 10px;
+        color: brown;
+        width:100%;
+    }
+
+    h1
+    {
+        margin-left: 00px;
+    } 
+
+    .jmbtFront
+    {
+        background-color: tan;
+        color: brown;
+        height: 184px;
+        width: 300px;
+
+        margin-top: 5px;
+        margin-bottom: 35px;
+        margin-left: 15px;
+        margin-right: 25px;
+
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 00px;
+        padding-right: 10px;
+    }
+    .jmbtFront h2
+    {
+        font-size: 50px;
+        text-align: center;
+
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 00px;
+        padding-right: 10px;
+    }
+    
+    .jmbtHam,
+    .jmbtGerb,
+    .jmbtGP
+    {
+        margin-top: 0px;
+        margin-bottom:0px;
+        padding-top:0px;
+        height: 150px;
+        width: 265px;
+        padding-left: 0px;
+        padding-top: 00px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+    }
+
+    /*CSS here found from http://stackoverflow.com/questions/20914711/bootstrap-3-jumbotron-background-image-effect 
+     *  and  http://stackoverflow.com/questions/23001031/how-do-i-make-an-image-fit-inside-a-button-in-css
+     */
+    .jmbtFrontHam {
+        background-image: url(http://img.thesun.co.uk/aidemitlum/archive/01722/SNN0409HAMS---620_1722095a.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .jmbtFrontGerb {
+        background-image: url(http://www.petresearch.net/sites/default/files/Gerbil.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .jmbtFrontGP {
+        background-image: url(http://valevets.co.uk/dursley/wp-content/uploads/2013/11/fluffy_guineapig.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+
+    .jmbtHam h2,
+    .jmbtGerb h2,
+    .jmbtGP h2
+    {
+        margin-top: 10px;
+        padding-top: 40px;
+        font-size: 30px;
+    }
+    
+    .jmbtFront a
+    {
+        color: brown;
+        padding-left:0px;
+    }
+    .jmbtFront a:hover
+    {
+        color: chocolate;
+        text-decoration:none;
+    }
+    .body-content 
+    {
+        padding: 0px;
+    }
+}
+
+body 
+{
+    background-color: antiquewhite;
+}
+
+.titlepage 
+{
+    background-color: tan;
+}
+
+.topBar 
+{
+    background-color: black;
+    color: white;
+}
+
+.label
+{
+    font-size: 14px;
+    color: brown;
+}
+
+.lblResult
+{
+    font-size: 18px;
+    color: red;
+}
+        
+.inputbox, 
+.lblResult
+{
+    position:absolute; left: 150px;
+}
+
+.leftNavBar
+{
+    background-color: tan;
+    text-decoration: none;
+    position:fixed;
+    width:20%;
+}
+.leftNavBar a
+{
+    color: brown;
+}
+
+.lNavBar
+{
+    background-color: tan;
+    text-decoration: none;
+    padding:0px;
+}
+.lNavBar a
+{
+    color: brown;
+}
+
+
+.sidebar img
+{
+    margin:10px;
+    position:fixed;
+    top:300px;
+    height: 200px;
+    width: 222px;
+}
+
+
+.navbar-brand {
+  float: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.animalpagepic {
+    margin-left: 15px;
+    height: 166px;
+    width: 250px;
+    padding-left:8px;
+    padding-right:0px;
+}
+
+.frontpagepic {
+    height: 200px;
+    width: 350px;
+    padding-left:25px;
+    padding-right:15px;
+}
+
+
+/*
+.col-md-9,
+.col-md-6
+{
+    border: 2px solid green;
+}
+*/
+
+.adviceTable, .adviceTable td, .adviceTable th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+    
+}
+
+.adviceTable tr:hover {
+    background-color: #f5f5f5;
+
+}
+
+.adviceTable td, .adviceTable th {
+    
+}
+.submitAdviceTable{
+    border: none;
+
+}
+
+.tagTable, .tagTable td, .tagTable th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+    padding: 5px;
+    width: 100%;
+}
+
+.tagTable td {
+    width: 10%;
+}
+
+.checkBoxTag tr, .checkBoxTag input {
+    width: 25px;
+    height: 15px;
+    padding: 10px;
+}
+
+
+.prodList {
+    width:775px;
+    list-style-type:none;
+}
+
+.inputBoxes{
+    width:600px;
+    height:30px;
+    
+    
+    margin:0px;
+}
+
+.inputBoxesText{
+    width:130px; 
+    height:30px; 
+    float:left;
+    
+    margin:0px;
+}
+
+.labelBoxes{
+    width:600px;
+    height:25px;
+    
+    
+}
+
+.labelBoxesText{
+    width:130px; 
+    height:25px; 
+    float:left;
+    
+}
+
+.dataPagerButton, .lvBtn, .submitBtn{
+    width:75px;
+}
+
+.profPic {
+    width:100px; 
+    height:100px;
+}
+
+.frontPagePic{
+
+}
+
+.frontPagePic h2 {
+    color: brown;
+    text-decoration: none;
+    text-align: center;
+}
+
+.frontPagePic a h2:hover,
+.frontpagepic a h2:focus
+{
+    color: chocolate;
+    text-decoration: none;
+}
+
+.bannerImg, .bannerText
+{
+    width: 100%;
+    text-align:center;
+    color:brown;
+    font-size:75px;
+}
+
+.commentTable, .commentTable td, .commentTable th {
+    border: 1px solid brown;
+    border-collapse: collapse;
+    text-align:center;
+    padding: 5px;
+    width: 100%;
+    background-color:tan;
+    color:brown;
+
+}
+
+.commentTable tr:nth-child(even){
+
+    background-color:burlywood;
+
+}
+
+.commentTable td {
+    width: 10%;
+
+}
+
+.adviceDetailTable, .adviceDetailTable td, .adviceDetailTable th {
+    border: 1px thin lightgrey;
+    border-collapse: collapse;
+    text-align:center;
+    background-color: tan;
+    color:brown;
+}
+
+.tagLoz{
+    padding:10px;
+    border-radius: 25px;
+    background-color:chocolate;
+    color:wheat;
+    font-weight:bold;
+    
+}
+
+
+.rbListRating tr, 
+.rbListRating input {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.mapiframe {
+    width: 900px;
+    height: 400px;
+}
+
+.storeBtn {
+    width: 150px;
+
+}
+
+
+.gvStores th,
+.gvStores td
+
+{
+    padding:5px;
+    background-color: tan;
+    color: brown;
+}
+
+.petShopLinks td{
+    padding-right: 5px;
+}
+
+.productTable tr{
+    background-color: #DCDCDC; 
+    color: #000000;
+}
+
+.productTablePic {
+    margin-top:20px;
+    
+}
+
+.prodRow > td:nth-child(1) { 
+    width:20%;
+}
+
+.prodRow > td:nth-child(3) {
+    width: 10%;
+}
+
+.prodRow > td {
+    width:60%;
+}
+
+.prodRow ~ input {
+    width:70px;
+}
+
+.editProd {
+    text-align:center;
+}
+
+.editProd div {
+    text-align:center;
+    background-color: tan;
+    border-radius: 10px;
+    margin-right:20px;
+    padding:5px;
+
+}
+
+.editProd a {
+    color:brown;
+    text-decoration:none;
+}
+
+.editProd a:hover {
+    color: peru;
+    text-decoration:none;
+}

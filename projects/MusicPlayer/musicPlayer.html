@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Simple Music Player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+   
+</head>
+
+<body>
+<!-- ************** Home Page *************** -->
+
+<div data-role="page" id="home">
+
+	<div data-role="header">
+        <h1>Music Player</h1>
+    </div>
+	
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#artist">Artist<span class="ui-li-count">3</span></a></li>
+			<!--<li><a href="#track">Track<span class="ui-li-count">15</span></a></li>
+			<li><a href="#track">Album<span class="ui-li-count">15</span></a></li>
+			<li><a href="#playlist">PlayList<span class="ui-li-count">2</span></a></li> -->
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Artist Page *************** -->
+<div data-role="page" id="artist">
+
+	<div data-role="header">
+        <h1>Artist</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#katyPerry">Katy Perry<span class="ui-li-count">2</span></a></li>
+			<li><a href="#taylorSwift">Taylor Swift<span class="ui-li-count">2</span></a></li>
+			<li><a href="#ellieGoulding">Ellie Goulding<span class="ui-li-count">2</span></a></li>
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Katy Perry Page *************** -->
+<div data-role="page" id="katyPerry">
+
+	<div data-role="header">
+        <h1>Katy Perry</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#teenDream">Teenage Dream</a></li>
+			<li><a href="#prism">Prism</a></li>
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Teenage Dream (Album) Page *************** -->
+<div data-role="page" id="teenDream">
+
+	<div data-role="header">
+        <h1>Teenage Dream</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<ol data-role="listview">
+			<li><a href="#teenageDream">Teenage Dream</a></li>
+			<li><a href="#lastFridayNight">Last Friday Night (TGIF)</a></li>
+			<li><a href="#californiaGurls">California Gurls</a></li>
+			<li><a href="#firework">Firework</a></li>
+			<li><a href="#peacock">Peacock</a></li>
+			<li><a href="#circleTheDrain">Circle The Drain</a></li>
+			<li><a href="#theOneThatGotAway">The One That Got Away</a></li>
+			<li><a href="#et">E.T.</a></li>
+			<li><a href="#whoAmILivingFor">Who Am I Living For</a></li>
+			<li><a href="#pearl">Pearl</a></li>
+			<li><a href="#hummingbirdHeartbeat">Hummingbird Heartbeat</a></li>
+			<li><a href="#notLikeTheMovies">Not Like The Movies</a></li>
+		</ol>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Teenage Dream (Track) Page *************** -->
+<div data-role="page" id="teenageDream">
+
+	<div data-role="header">
+        <h1>Teenage Dream</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/01_Teenage_Dream.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Last Friday Night (Track) Page *************** -->
+<div data-role="page" id="lastFridayNight">
+
+	<div data-role="header">
+        <h1>Last Friday Night (TGIF)</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/02_Last_Friday_Night_(T.G.I.F.).mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** California Gurls (Track) Page *************** -->
+<div data-role="page" id="californiaGurls">
+
+	<div data-role="header">
+        <h1>California Gurls</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/03_California_Gurls.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Firework (Track) Page *************** -->
+<div data-role="page" id="firework">
+
+	<div data-role="header">
+        <h1>Firework</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/04_Firework.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Peacock (Track) Page *************** -->
+<div data-role="page" id="peacock">
+
+	<div data-role="header">
+        <h1>Peacock</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/05_Peacock.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Circle The Drain (Track) Page *************** -->
+<div data-role="page" id="circleTheDrain">
+
+	<div data-role="header">
+        <h1>Circle The Drain</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/06_Circle_The_Drain.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** The One That Got Away (Track) Page *************** -->
+<div data-role="page" id="theOneThatGotAway">
+
+	<div data-role="header">
+        <h1>The One That Got Away</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/07_The_One_That_Got_Away.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** E.T. (Track) Page *************** -->
+<div data-role="page" id="et">
+
+	<div data-role="header">
+        <h1>E.T.</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/08_E.T..mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Who Am I Living For (Track) Page *************** -->
+<div data-role="page" id="whoAmILivingFor">
+
+	<div data-role="header">
+        <h1>Who Am I Living For</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/09_Who_Am_ I_Living_For.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Pearl (Track) Page *************** -->
+<div data-role="page" id="pearl">
+
+	<div data-role="header">
+        <h1>Pearl</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/10_Pearl.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Hummingbird Heartbeat (Track) Page *************** -->
+<div data-role="page" id="hummingbirdHeartbeat">
+
+	<div data-role="header">
+        <h1>Hummingbird Heartbeat</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/11_Hummingbird_Heartbeat.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Not Like The Movies (Track) Page *************** -->
+<div data-role="page" id="notLikeTheMovies">
+
+	<div data-role="header">
+        <h1>Not Like The Movies</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Katy_Perry_Teenage_Dream/12_Not_Like_The_Movies.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Prism (Album) Page *************** -->
+<div data-role="page" id="prism">
+
+	<div data-role="header">
+        <h1>Prism</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<ol data-role="listview">
+			<li><a href="#kalimba">Roar</a></li>
+			<li><a href="#kalimba">Legendary Lovers</a></li>
+			<li><a href="#kalimba">Birthday</a></li>
+			<li><a href="#kalimba">Walking On Air</a></li>
+			<li><a href="#kalimba">Unconditionally</a></li>
+			<li><a href="#kalimba">Dark Horse</a></li>
+			<li><a href="#kalimba">This Is How We Do</a></li>
+			<li><a href="#kalimba">International Smile</a></li>
+			<li><a href="#kalimba">Ghost</a></li>
+			<li><a href="#kalimba">Love Me</a></li>
+			<li><a href="#kalimba">This Moment</a></li>
+			<li><a href="#kalimba">Double Rainbow</a></li>
+			<li><a href="#kalimba">By The Grace Of God</a></li>
+		</ol>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Taylor Swift Page *************** -->
+<div data-role="page" id="taylorSwift">
+
+	<div data-role="header">
+        <h1>Taylor Swift</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#prism">Red</a></li>
+			<li><a href="#prism">1989</a></li>
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Ellie Goulding Page *************** -->
+<div data-role="page" id="ellieGoulding">
+
+	<div data-role="header">
+        <h1>Ellie Goulding</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#prism">Halcyon</a></li>
+			<li><a href="#prism">Lights</a></li>
+		</ul>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+<!-- ************** Kalimba (Track) Page *************** -->
+<div data-role="page" id="kalimba">
+
+	<div data-role="header">
+        <h1>Kalimba</h1>
+    </div>
+
+	<div data-role="main" class="ui-content">
+		<audio controls>
+			<source src="Kalimba.mp3" type="audio/mpeg">	
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+	
+</div>
+
+</body>
+</html>

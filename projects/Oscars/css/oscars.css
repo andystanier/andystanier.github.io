@@ -1,0 +1,65 @@
+
+
+p.title {
+	text-align: center;
+	vertical-align: text-top;
+	font-family: 'Brush Script MT', cursive;
+	/* http://www.cssfontstack.com/Brush-Script-MT  */
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#oscarName{
+	height: 30%;
+	width: 30%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#oscarPic {
+	height: 30%;
+	width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.description {
+	text-align: justify;
+}
+
+.filmPoster {
+	height: 25%;
+	width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, 
+td, 
+th{
+	
+	border: 1px solid black;
+    border-collapse: collapse;
+	padding: 5px;
+}
+
+.nowrap {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.nowrap label {
+	display: inline-block;
+}
+
+.linkButton {
+	width: 15%; 
+	height: 15%; 
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-left: 1 px;
+}	

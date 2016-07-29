@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!--http://jose.cs.herts.ac.uk/as15aic/practice/mobile/15001294Oscars/html/OscarsApp.html -->
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/oscars.css" />
+	
+    <title>Best Oscar Goes To...</title>
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+	<script type="text/javascript" src="../js/oscarFuncScripts.js"></script>
+	<script type="text/javascript" src="../js/oscarToggleScripts.js"></script>
+	<script type="text/javascript" src="../js/oscarSwipeScripts.js"></script>
+</head>
+<body>
+
+<!-- ************** Information *************** -->
+    <div data-role="page" id="info">
+        <div data-role="header">
+            <h1>Information</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+			<p class="description"><b>The Best of The Oscars</b> is a film-lovers mobile website which helps 
+			users identify films that the Academy of Motion Picture Arts and Sciences has awarded 
+			<i>Best Picture</i>	for the year in which they were made.</p>
+			
+			<p class="description">The Oscars&reg, as the Academy Awards have become known, 
+			have been awarded since 1929 for the films made in 1927/28, and the <i>Outstanding Picture</i> 
+			or <i>Best Picture</i> award has been given every year since.</p>
+			
+			<p class="description">This website provides you with a comprehensive list of all the
+			films which have won the top award and enables you to tick them off once you have watched
+			them.  You can keep an eye on how many you have seen using the progress bar on the main page.
+			</p>
+			
+			<p class="description">The films are organised by date and can also be viewed by title.
+			Swipe left or right from a film detail page to view the next or previous year.</p>
+			
+			<p class="description">Film information in this app is taken from Wikipedia and IMDB.</p>
+			
+			<p>Copyright &copy 2016 15001294</p>
+			
+			<input type="button" value="Clear Progress" onclick="clearProg()">
+        </div>
+
+        <div class="footer"></div>
+    </div>
+	<script type="text/javascript" src="../js/JSFooter.js"></script>
+	
+</body>
+</html>

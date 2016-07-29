@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<!--http://jose.cs.herts.ac.uk/as15aic/practice/mobile/15001294Oscars/html/OscarsApp.html -->
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/oscars.css" />
+	
+    <title>Best Oscar Goes To...</title>
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+	<script type="text/javascript" src="../js/oscarFuncScripts.js"></script>
+	<script type="text/javascript" src="../js/oscarToggleScripts.js"></script>
+	<script type="text/javascript" src="../js/oscarSwipeScripts.js"></script>
+</head>
+<body>
+
+<!-- ************** A to Z *************** -->
+    <div data-role="page" id="aToZ">
+        <div data-role="header">
+            <h1>A to Z</h1>
+        </div>
+		
+        <div data-role="main" class="ui-content">
+			<form class="ui-filterable">
+				<input id="alphaFilter" data-type="search">
+			</form>
+			<!-- W3Schools.com -->
+			<ul data-role="listview" data-autodividers="true" data-filter="true" data-input="#alphaFilter">
+				<li><a href="years.html" rel="external" class="yearLink" id="85" data-role="button" data-icon="arrow-r" data-iconpos="right">12 Years a Slave</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="73" data-role="button" data-icon="arrow-r" data-iconpos="right">A Beautiful Mind</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="38" data-role="button" data-icon="arrow-r" data-iconpos="right">A Man for All Seasons</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="22" data-role="button" data-icon="arrow-r" data-iconpos="right">All About Eve</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="2"  data-role="button" data-icon="arrow-r" data-iconpos="right">All Quiet on the Western Front</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="21" data-role="button" data-icon="arrow-r" data-iconpos="right">All the King's Men</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="56" data-role="button" data-icon="arrow-r" data-iconpos="right">Amadeus</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="71" data-role="button" data-icon="arrow-r" data-iconpos="right">American Beauty</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="23" data-role="button" data-icon="arrow-r" data-iconpos="right">An American in Paris</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="49" data-role="button" data-icon="arrow-r" data-iconpos="right">Annie Hall</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="84" data-role="button" data-icon="arrow-r" data-iconpos="right">Argo</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="28" data-role="button" data-icon="arrow-r" data-iconpos="right">Around the World in 80 Days</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="31" data-role="button" data-icon="arrow-r" data-iconpos="right">Ben-Hur</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="86" data-role="button" data-icon="arrow-r" data-iconpos="right">Birdman or (The Unexpected Virtue of Ignorance)</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="67" data-role="button" data-icon="arrow-r" data-iconpos="right">Braveheart</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="15" data-role="button" data-icon="arrow-r" data-iconpos="right">Casablanca</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="5"  data-role="button" data-icon="arrow-r" data-iconpos="right">Cavalcade</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="53" data-role="button" data-icon="arrow-r" data-iconpos="right">Chariots of Fire</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="74" data-role="button" data-icon="arrow-r" data-iconpos="right">Chicago</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="3"  data-role="button" data-icon="arrow-r" data-iconpos="right">Cimarron</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="77" data-role="button" data-icon="arrow-r" data-iconpos="right">Crash</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="62" data-role="button" data-icon="arrow-r" data-iconpos="right">Dances with Wolves</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="61" data-role="button" data-icon="arrow-r" data-iconpos="right">Driving Miss Daisy</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="66" data-role="button" data-icon="arrow-r" data-iconpos="right">Forrest Gump</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="25" data-role="button" data-icon="arrow-r" data-iconpos="right">From Here to Eternity</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="54" data-role="button" data-icon="arrow-r" data-iconpos="right">Gandhi</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="19" data-role="button" data-icon="arrow-r" data-iconpos="right">Gentleman's Agreement</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="30" data-role="button" data-icon="arrow-r" data-iconpos="right">Gigi</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="72" data-role="button" data-icon="arrow-r" data-iconpos="right">Gladiator</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="16" data-role="button" data-icon="arrow-r" data-iconpos="right">Going My Way</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="11" data-role="button" data-icon="arrow-r" data-iconpos="right">Gone with the Wind</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="4"  data-role="button" data-icon="arrow-r" data-iconpos="right">Grand Hotel</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="20" data-role="button" data-icon="arrow-r" data-iconpos="right">Hamlet</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="13" data-role="button" data-icon="arrow-r" data-iconpos="right">How Green Was My Valley</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="39" data-role="button" data-icon="arrow-r" data-iconpos="right">In the Heat of the Night</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="6"  data-role="button" data-icon="arrow-r" data-iconpos="right">It Happened One Night</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="51" data-role="button" data-icon="arrow-r" data-iconpos="right">Kramer vs. Kramer</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="34" data-role="button" data-icon="arrow-r" data-iconpos="right">Lawrence of Arabia</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="27" data-role="button" data-icon="arrow-r" data-iconpos="right">Marty</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="41" data-role="button" data-icon="arrow-r" data-iconpos="right">Midnight Cowboy</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="76" data-role="button" data-icon="arrow-r" data-iconpos="right">Million Dollar Baby</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="14" data-role="button" data-icon="arrow-r" data-iconpos="right">Mrs. Miniver</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="7"  data-role="button" data-icon="arrow-r" data-iconpos="right">Mutiny on the Bounty</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="36" data-role="button" data-icon="arrow-r" data-iconpos="right">My Fair Lady</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="79" data-role="button" data-icon="arrow-r" data-iconpos="right">No Country for Old Men</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="40" data-role="button" data-icon="arrow-r" data-iconpos="right">Oliver!</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="26" data-role="button" data-icon="arrow-r" data-iconpos="right">On the Waterfront</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="47" data-role="button" data-icon="arrow-r" data-iconpos="right">One Flew Over the Cuckoo's Nest</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="52" data-role="button" data-icon="arrow-r" data-iconpos="right">Ordinary People</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="57" data-role="button" data-icon="arrow-r" data-iconpos="right">Out of Africa</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="42" data-role="button" data-icon="arrow-r" data-iconpos="right">Patton</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="58" data-role="button" data-icon="arrow-r" data-iconpos="right">Platoon</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="60" data-role="button" data-icon="arrow-r" data-iconpos="right">Rain Man</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="12" data-role="button" data-icon="arrow-r" data-iconpos="right">Rebecca</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="48" data-role="button" data-icon="arrow-r" data-iconpos="right">Rocky</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="65" data-role="button" data-icon="arrow-r" data-iconpos="right">Schindler's List</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="70" data-role="button" data-icon="arrow-r" data-iconpos="right">Shakespeare in Love</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="80" data-role="button" data-icon="arrow-r" data-iconpos="right">Slumdog Millionaire</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="87" data-role="button" data-icon="arrow-r" data-iconpos="right">Spotlight</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="55" data-role="button" data-icon="arrow-r" data-iconpos="right">Terms of Endearment</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="32" data-role="button" data-icon="arrow-r" data-iconpos="right">The Apartment</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="83" data-role="button" data-icon="arrow-r" data-iconpos="right">The Artist</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="18" data-role="button" data-icon="arrow-r" data-iconpos="right">The Best Years of Our Lives</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="29" data-role="button" data-icon="arrow-r" data-iconpos="right">The Bridge on the River Kwai</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="1"  data-role="button" data-icon="arrow-r" data-iconpos="right">The Broadway Melody</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="50" data-role="button" data-icon="arrow-r" data-iconpos="right">The Deer Hunter</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="78" data-role="button" data-icon="arrow-r" data-iconpos="right">The Departed</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="68" data-role="button" data-icon="arrow-r" data-iconpos="right">The English Patient</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="43" data-role="button" data-icon="arrow-r" data-iconpos="right">The French Connection</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="44" data-role="button" data-icon="arrow-r" data-iconpos="right">The Godfather</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="46" data-role="button" data-icon="arrow-r" data-iconpos="right">The Godfather Part II</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="8"  data-role="button" data-icon="arrow-r" data-iconpos="right">The Great Ziegfeld</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="24" data-role="button" data-icon="arrow-r" data-iconpos="right">The Greatest Show on Earth</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="81" data-role="button" data-icon="arrow-r" data-iconpos="right">The Hurt Locker</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="82" data-role="button" data-icon="arrow-r" data-iconpos="right">The King's Speech</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="59" data-role="button" data-icon="arrow-r" data-iconpos="right">The Last Emperor</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="9"  data-role="button" data-icon="arrow-r" data-iconpos="right">The Life of Emile Zola</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="75" data-role="button" data-icon="arrow-r" data-iconpos="right">The Lord of the Rings: The Return of the King</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="17" data-role="button" data-icon="arrow-r" data-iconpos="right">The Lost Weekend</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="63" data-role="button" data-icon="arrow-r" data-iconpos="right">The Silence of the Lambs</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="37" data-role="button" data-icon="arrow-r" data-iconpos="right">The Sound of Music</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="45" data-role="button" data-icon="arrow-r" data-iconpos="right">The Sting</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="69" data-role="button" data-icon="arrow-r" data-iconpos="right">Titanic</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="35" data-role="button" data-icon="arrow-r" data-iconpos="right">Tom Jones</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="64" data-role="button" data-icon="arrow-r" data-iconpos="right">Unforgiven</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="33" data-role="button" data-icon="arrow-r" data-iconpos="right">West Side Story</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="0"  data-role="button" data-icon="arrow-r" data-iconpos="right">Wings</a></li>
+				<li><a href="years.html" rel="external" class="yearLink" id="10" data-role="button" data-icon="arrow-r" data-iconpos="right">You Can't Take It With You</a></li>
+
+				
+			</ul>
+        </div>
+
+        <div class="footer"></div>
+    </div> 
+	
+	<script type="text/javascript" src="../js/JSFooter.js"></script>
+</body>
+</html>
