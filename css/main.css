@@ -97,3 +97,21 @@ table{
 table td{
 	width:auto;
 }
+
+th{
+	background: #bbbbbb;
+}
+
+.altern{
+	width: auto;
+	background: #dddddd;
+}
+
+.invisible{
+	display:none;
+}
+
+td:hover{
+	background: #cccccc;
+	
+}
