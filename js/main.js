@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$('.intLink').click(function(){
 		var fromTab = $('.tab-content.current').attr('id');
 		var toTab = $(this).attr('data-tab');
-		
+
 		$('#'+fromTab).removeClass('current');
 		$('#'+fromTab+'Tab').removeClass('current');
 
@@ -30,4 +30,5 @@ $(document).ready(function(){
 		var html = $('#'+textLabel).html();
 		$('.explainText').html(html);
 	});
+
 })

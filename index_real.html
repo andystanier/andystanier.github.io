@@ -12,23 +12,24 @@
     <!-- Include the jQuery Mobile library -->
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+
 </head>
 <body>
 	<!--------------- Tabbed Header ------------>
 	<div data-role="page" id="cv">
 		<div data-role="container">
 				<ul class="tabs">
-					<li data-tab="details" id="detailsTab" class="tab-link" >Personal Details</li>
+					<li data-tab="details" id="detailsTab" class="tab-link current" >Personal Details</li>
 					<li data-tab="skills" id="skillsTab" class="tab-link" >Skills</li>
 					<li data-tab="work" id="workTab" class="tab-link" >Work History</li>
-					<li data-tab="education" id="educationTab" class="tab-link current" >Education</li>
+					<li data-tab="education" id="educationTab" class="tab-link" >Education</li>
 					<li data-tab="projects" id="projectsTab" class="tab-link" >Projects</li>
 					<li data-tab="pdf" id="pdfTab" class="tab-link" >PDF Version</li>
 				</ul>
 				
 	<!--------------- Details Page ------------>
-				<!-- <div id="details" class="tab-content current"> -->
-				<div id="details" class="tab-content">
+				<div id="details" class="tab-content current">
+				<!-- <div id="details" class="tab-content"> -->
 					<div class="info">
 						<h2 id="name">Andy Stanier MChem MSc</h2>
 						<a id="email" href="mailto:andy.stanier@gmail.com">andy.stanier@gmail.com</a><br/>
@@ -37,214 +38,150 @@
 						<h4 id="phone">07814 514881</h4>
 						<h4 id="address">Macclesfield, Cheshire</h4>
 					</div>
-					
-					<p>Andy Stanier has recently completed a masters degree in computer science.  
-					Originally with a background in chemistry, and with 15 years experience
-					in the pharmaceutical industry, upon being made redundant, he decided
-					to persue one of his other long-held interests in computer programming.
-					</p>
-					<p>Having undertaken several different online courses in programming and
-					computer science and teaching himself through books and YouTube videos, 
-					he signed up to take a masters in computer science from the University of
-					Hertfordshire, enabling him to gain a recognised formal qualification.
-					</p>
+					<div id="personalStatement"></div>
 				</div>
 				
 	<!--------------- Skills Page ------------>			
 				<!-- <div id="skills" class="tab-content current"> -->
 				<div id="skills" class="tab-content">
-					<p>Andy has learned various different languages and programs over the years, especially in the course of studying
-					his Masters.  Some of the following were used prior to his study however the bulk were learned recently.  More 
-					details can be found in the <a class='intLink' id="projects-link" data-tab="projects">Projects</a> section.
-					</p>
-					
-					<table class="table">
-						<tr>
-							<th colspan="2">Programming Languages</th>
-							<th>Techniques/Software</th>
-						</tr>
-						<tr class="altern">
-							<td id='java'>Java</td>
-							<td id='html'>HTML</td>
-							<td id='vs'>MS Virtual Studio</td>
-						</tr>
-						<tr>
-							<td id='css'>CSS</td>
-							<td id='js'>JavaScript</td>
-							<td id='blu'>BlueJ</td>
-						</tr>
-						<tr class="altern">
-							<td id='jQuery'>JQuery</td>
-							<td id='json'>JSON</td>
-							<td id='oop'>Object Oriented Programming</td>
-						</tr>
-						<tr>
-							<td id='csharp'>C#</td>
-							<td id='asp'>ASP.NET</td>
-							<td id='os'>Windows and Linux Operating Systems</td>
-						</tr>
-						<tr class="altern">
-							<td id='sql'>SQL</td>
-							<td id='xml'>XML</td>
-							<td id='cli'>Command Line Interface</td>
-						</tr>
-						<tr>
-							<td id='cTypes'>C and C++</td>
-							<td id='python'>Python</td>
-							<td id='notepad'>Notepad++</td>
-						</tr>
-						<tr class="altern">
-							<td id='uml'>UML</td>
-							<td id='git'>Git</td>
-							<td id='jira'>JIRA</td>
-						</tr>
-					</table>
-					
+					<div>
+						<p><span id="skillsText"></span>
+							More details can be found in the <a class="intLink" id="projects-link" data-tab="projects">Projects</a> section.</p>
+					</div>
+					<div id="skillsTable">
+						<table class="table">
+							<tr>
+								<th colspan="3">Programming Languages</th>
+								<th>Techniques/Software</th>
+							</tr>
+							<tr class="altern">
+								<td id='java'>Java</td>
+								<td id='html'>HTML</td>
+								<td id='css'>CSS</td>
+								<td id='notepad'>Notepad++</td>
+							</tr>
+							<tr>
+								<td id='js'>JavaScript</td>
+								<td id='jQuery'>JQuery</td>
+								<td id='json'>JSON</td>
+								<td id='sublime'>Sublime Text 2</td>
+							</tr>
+							<tr class="altern">
+								<td id='csharp'>C#</td>
+								<td id='asp'>ASP.NET</td>
+								<td id='sql'>SQL</td>
+								<td id='vs'>MS Virtual Studio 2015</td>
+							</tr>
+							<tr>
+								<td id='c'>C</td>
+								<td id='python'>Python</td>
+								<td id='xml'>XML</td>
+								<td id='cli'>Command Line Interface</td>
+							</tr>
+							<tr class="altern">
+								<td id='uml'>UML</td>
+								<td id='git'>Git</td>
+								<td id='ajax'>AJAX</td>
+								<td id='blu'>BlueJ</td>
+							</tr>
+							<tr>
+								<td id='cplusplus'>C++</td>
+								<td id='ts'>TypeScript</td>
+								<td id='angular'>Angular.js</td>
+								<td id='jira'>JIRA</td>
+								<!-- <td id='os'>Windows and Linux Operating Systems</td> -->
+							</tr>
+						</table>
+					</div>
 					<div class="explainText">See Projects Tab for more details</div>
-					
-					<p>Andy has also gained many transferable skills during 15 years working in the pharmaceutical industry</p>
-					<ul>
-						<li>Reliablilty</li>
-						<li>Tenacity</li>
-						<li>Teamwork</li>
-						<li>Independance</li>
-					</ul>
-					
-					<p class="invisible" id="javaText">Wrote a desktop application in Java for final project</p>
-					<p class="invisible" id="htmlText">Various websites written using HTML5</p>
-					<p class="invisible" id="cssText">Use of Bootstrap in design of a website</p>
-					<p class="invisible" id="jsText">Used to code in websites on the client side</p>
-					<p class="invisible" id="jQueryText">Used JQuery in mobile and other websites</p>
-					<p class="invisible" id="jsonText">The content of a mobile website was saved in a JSON stream</p>
-					<p class="invisible" id="cTypesText">Secure programming course conentrated on C</p>
-					<p class="invisible" id="aspText">Used to write a website of user generated content</p>
-					<p class="invisible" id="sqlText">Used to produce database queries within the ASP website </p>
-					<p class="invisible" id="xmlText">Covered briefly during second semester of Masters</p>
-					<p class="invisible" id="pythonText">Self taught Python from textbooks and online tutorials</p>
-					<p class="invisible" id="gitText">Used Git to commit versions of final project and this website</p>
-					<p class="invisible" id="umlText">Used UML techniques when planning final project</p>
-					<p class="invisible" id="csharpText">C# used for website coding on the server side</p>
-					
-					<p class="invisible" id="vsText">Used Visual Studio to write a website in ASP.NET using C# and SQL</p>
-					<p class="invisible" id="bluText">Learned Java using a program called BlueJ</p>
-					<p class="invisible" id="oopText">As a part of learning Java and UML</p>
-					<p class="invisible" id="osText">Used both Windows and Linux operating systems</p>
-					<p class="invisible" id="cliText">Used the command line to compile and run programs</p>
-					<p class="invisible" id="notepadText">Extensively used to program in Java and HTML</p>
-					<p class="invisible" id="jiraText">Used to capture new and complete tasks whilst working at Molplex</p>
-					
+					<div id="transferSkills"></div>
+					<div class="invisible" id="invisibleDetail">
+						<p id="javaText">Wrote a desktop application in Java for final project</p>
+						<p id="htmlText">Various websites written using HTML5</p>
+						<p id="cssText">Use of Bootstrap in design of a website</p>
+						<p id="jsText">Used to code in websites on the client side</p>
+						<p id="jQueryText">Used JQuery in mobile and other websites</p>
+						<p id="jsonText">The content of a mobile website was saved in a JSON stream</p>
+						<p id="cText">Secure programming course conentrated on C</p>
+						<p id="aspText">Used to write a website of user generated content</p>
+						<p id="sqlText">Used to produce database queries within the ASP website </p>
+						<p id="xmlText">Covered briefly during second semester of Masters</p>
+						<p id="pythonText">Self taught Python from textbooks and online tutorials</p>
+						<p id="gitText">Used Git to commit versions of final project and this website</p>
+						<p id="umlText">Used UML techniques when planning final project</p>
+						<p id="csharpText">C# used for website coding on the server side</p>
+						<p id="vsText">Used Visual Studio to write a website in ASP.NET using C# and SQL</p>
+						<p id="bluText">Learned Java using a program called BlueJ</p>
+						<p id="oopText">As a part of learning Java and UML</p>
+						<!-- <p id="osText">Used both Windows and Linux operating systems</p> -->
+						<p id="cliText">Used the command line to compile and run programs</p>
+						<p id="notepadText">Extensively used to program in Java and HTML</p>
+						<p id="jiraText">Used to capture new and complete tasks whilst working at Molplex</p>
+						<p id="cplusplusText">C++</p>
+						<p id="tsText">TypeScript</p>
+						<p id="angularText">Angular.js</p>
+						<p id="sublimeText">Sublime Text</p>
+						<p id="ajaxText">AJAX</p>
+						<p id="noText">See Projects Tab for more details</p>
+					</div>
 				</div>
 				
 	<!--------------- Work Experience Page ------------>				
 				<!-- <div id="work" class="tab-content current"> -->
 				<div id="work" class="tab-content">
-					<div class="workExHead">
+					<div id="uohExp">
 						<h4 class="workExDate">Aug 2015 – Sept 2016</h4>
 						<h4 class="workExTitle">Distance Learning Masters Student in Computer Science, University of Hertfordshire</h4>
-						<p class="workExBody">
-						See <a class="intLink" id="education-link" data-tab="education">Education</a> section for more details.
-						</p>
+						<p class="workExBody" id="uohExpBody">
+						See <a class="intLink" id="education-link" data-tab="education">Education</a> section for more details.</p>
 					</div>
-					<div class="workExHead">
+					<div id="molplexExp">
 						<h4 class="workExDate">May 2014 – Aug 2015</h4>
 						<h4 class="workExTitle">Synthetic Chemist at Molplex Pharmaceuticals, Alderley Park</h4>
-						<p class="workExBody">
-						This job ended due to redundancy. 
-						Initially helping to set up a functional lab and office environment. Implementing working practices.
-						Identifying and obtaining lab equipment and chemistry software tools.
-						Main responsibilities were compound planning, design, synthesis, identification and delivery.
-						Safety officer for the lab; including writing SOPs, safety policies, fire sweeper.
-						Auditing of lab equipment and organising removal of unwanted kit. 
-						</p>
+						<p class="workExBody" id="molplexExpBody"></p>
 					</div>
-					<div class="workExHead">
+					<div id="betweenChemJobsExp">
 						<h4 class="workExDate">Dec 2013 – May 2014</h4>
 						<h4 class="workExTitle">Looking for work – Job searching, CV writing and IT courses.</h4>
-						<p class="workExBody">
-						During this period, attended Jobcentre run courses in CV writing, IT 
-						courses and applied for jobs in the pharmaceutical industry.
-						</p>
+						<p class="workExBody" id="betweenChemJobsExpBody"></p>
 					</div>
-					<div class="workExHead">
+					<div id="eisaiExp">
 						<h4 class="workExDate">Jan 2011 – Dec 2013</h4>
 						<h4 class="workExTitle">Synthetic Organic Chemist for CK Science at Eisai, Hatfield</h4>
-						<p class="workExBody">
-						This job ended in redundancy due to closure of the chemistry department.
-						Designed synthetic strategies that provided scaffolds for CNS focused libraries which could easily 
-						be functionalised to final compounds for ADME screening.
-						Improved synthetic route to tool compounds to support project assays with batches for in-vivo 
-						testing successfully delivered. Recognised within the chemistry group for problem solving and 
-						offering advice. Prepared and delivered presentations to communicate progress and problems to
-						colleagues at project and departmental meetings. Supported the day-to-day maintenance of analytical 
-						and preparative HPLC using expertise gained at previous employment.
-						</p>
+						<p class="workExBody" id="eisaiExpBody"></p>
 					</div>
-					<div class="workExHead">
+					<div id="charnwoodExp">
 						<h4 class="workExDate">Aug 2008 – Jan 2011</h4>
 						<h4 class="workExTitle">Medicinal Chemist at AstraZeneca, Charnwood, Loughborough</h4>
-						<p class="workExBody">
-						This job ended in redundancy due to closure of the chemistry department.
-						Designed and synthesised novel compounds within restricted time frames for biological screening against 
-						respiratory targets.   The resulting patent was filed. Involved with seeking out and testing new laboratory 
-						equipment to increase departmental productivity.  Permission was secured to purchase new equipment.
-						Coached sandwich student, advising on practical technique, problem solving and questioning on reaction mechanism.
-						Developed expertise in Unipoint and Trilution software for use in preparative HPLC.
-						</p>
+						<p class="workExBody" id="charnwoodExpBody"></p>
 					</div>    
-					<div class="workExHead">
+					<div id="alderleyExp">
 						<h4 class="workExDate">July 2001 – Aug 2008</h4>
 						<h4 class="workExTitle">Synthetic Chemist at AstraZeneca, Alderley Park, Macclesfield</h4>
-						<p class="workExBody">
-						This job ended in redundancy due to closure of the research area.
-						Worked within various project teams to deliver compounds for biological screening in Lead Generation 
-						in Oncology and Inflammation areas, with some projects progressing to lead optimisation stages.
-						Appointed route design expert in a High Throughput Chemistry and Purification Group.  Invented 
-						synthetic schemes that were amenable to high capacity synthesis and purification, resulting in small 
-						libraries of compounds for SAR purposes. Laboratory Safety Co-ordinator and Permit to Work issuer for 
-						local area.
-						</p>
+						<p class="workExBody" id="alderleyExpBody"></p>
 					</div>
 				</div>
 				
 	<!--------------- Education Page ------------>
-				<div id="education" class="tab-content current">
-				<!-- <div id="education" class="tab-content"> -->
-					
-					<h4>Educated in Computer Science at University of Hertfordshire, UK</h4>
-					<p>
-					A distance learning Masters degree in Computer Science, learning: 
-					<ul>
-						<li>Programming and Program Design - Learning Java and Object Oriented Programming</li>
-						<li>Web Scripting and Application Development - Learning about server side website design using ASP.NET, C# and SQL</li>
-						<li>Contempory Practices in Information Techology - The ethics of information technology</li>
-						<li>Mobile Standards, Interfaces and Applications - Learning about Ubiquitous computing, HCI, Wearable Computing, Context Awareness and using jQuery Mobile to generate a mobile website</li>
-						<li>Secure Systems Programming - Exploring security problems with the C programming language and how to fix them and learning about DDOS, BotNets, Worms, Viruses</li>
-						<li>Software Development Tools and Methods - Ways to develop software, UML, XML, secure systems development</li>
-						<li>A Final Project in Computer Science - A piece of work about Electronic Voting Systems</li>
-					</ul>
-					
-					
-					</p>
-					
-					<h4>Educated in Chemistry at University of York, UK</h4>
-					<p>Chemistry with a Year in Industry, MChem with First Class Honours.<br/>
-					Three years of study and practical labs, coursework and exams.
-					A fourth year was spent working in an industrial setting as a synthetic 
-					chemist in a drug discovery research department.  Learning on the job 
-					and completing a written report and exams.
-					</p>
-					
-					<h4>A Levels at Tytherington High School, Macclesfield</h4>
-					<p>Four 'A' Levels in Mathematics (A), Chemistry (A), Physics (B) and General Studies (A).
-					</p>
+				<!-- <div id="education" class="tab-content current"> -->
+				<div id="education" class="tab-content">
+					<div id="uohEd"></div>
+					<div id="uoyEd"></div>
+					<div id="tythEd"></div>
 				</div>
 				
 	<!--------------- Projects Page ------------>
 				<!-- <div id="projects" class="tab-content current"> -->
 				<div id="projects" class="tab-content">
-					<p>Couple of websites and Java program as part of course</p>
-					
-					<a href="projects/Oscars/html/home.html" target="_blank">Oscars Mobile Website</a>
+					<p>Most of the projects here were produced as part of a Masters course and demonstrate some of the breadth of subjects studied</p>
+					<ul>
+						<li><a href="projects/Oscars/html/home.html" target="_blank">Oscars Mobile Website</a><span id="oscarProj"></span></li>
+						<li><a href="projects/MusicPlayer/musicPlayer_v2.html" target="_blank">Music Player</a><span id="musicProj"></span></li>
+						<li><a href="https://jose.cs.herts.ac.uk/as15aic/final/" target="_blank">Rodent Rooms</a><span id="rodentProj" id="oscarProj"></span></li>
+						<li><a href="projects/EVote/EVote.zip" target="_blank">EVote</a><span id="evoteProj"></span></li>
+						<li><a href="https://jose.cs.herts.ac.uk/as15aic/practice/" target="_blank">Election Verification Tool</a><span id="votewsProj"></span></li>
+						<li><a href="projects/Yahtzee/yahtzee.zip" target="_blank">Yahtzee Simulation</a><span id="yahtzeeProj"></span></li>
+					</ul>
 				</div>
 				
 	<!--------------- PDF Page ------------>
@@ -255,12 +192,14 @@
 				
 	<!--------------- Footer ------------>
 			<div data-role="footer" data-position="fixed" data-fullscreen="false" data-tap-toggle="false" >
-				<p class="nameFooter">Andy Stanier</p> 
+				<p class="nameFooter"><a class="intLink" id="details-link" data-tab="details">Andy Stanier</a></p> 
 			</div>
 			
 		</div>
 	</div>
+
 	
 	<script src="js/main.js"></script>
+	<script src="js/cvData.js"></script>
 </body>
 </html>

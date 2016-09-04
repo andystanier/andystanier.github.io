@@ -23,9 +23,9 @@
 	<div data-role="main" class="ui-content">
 		<ul data-role="listview">
 			<li><a href="#artist">Artist<span class="ui-li-count" id="artistCount"></span></a></li>
-			<!--<li><a href="#track">Track<span class="ui-li-count">15</span></a></li>
-			<li><a href="#track">Album<span class="ui-li-count">15</span></a></li>
-			<li><a href="#playlist">PlayList<span class="ui-li-count">2</span></a></li> -->
+			<li><a href="#track">Track<span class="ui-li-count" id="trackCount"></span></a></li>
+			<li><a href="#album">Album<span class="ui-li-count" id="albumCount"></span></a></li>
+			<!--<li><a href="#playlist">PlayList<span class="ui-li-count" id="playListCount"></span></a></li>-->
 		</ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
@@ -48,6 +48,76 @@
 			<li><a href="#katyPerry">Katy Perry<span class="ui-li-count" id="kpCount"></span></a></li>
 			<li><a href="#taylorSwift">Taylor Swift<span class="ui-li-count" id="tsCount"></span></a></li>
 			<li><a href="#ellieGoulding">Ellie Goulding<span class="ui-li-count" id="egCount"></span></a></li>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ************** Track Page *************** -->
+<div data-role="page" id="track">
+	<div data-role="header">
+        <h1>Tracks</h1>
+    </div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview" id="tracks">
+			<li><a href="#kalimba">Teenage Dream</a></li>
+			<li><a href="#kalimba">Last Friday Night (TGIF)</a></li>
+			<li><a href="#kalimba">California Gurls</a></li>
+			<li><a href="#kalimba">Firework</a></li>
+			<li><a href="#kalimba">Peacock</a></li>
+			<li><a href="#kalimba">Circle The Drain</a></li>
+			<li><a href="#kalimba">The One That Got Away</a></li>
+			<li><a href="#kalimba">E.T.</a></li>
+			<li><a href="#kalimba">Who Am I Living For</a></li>
+			<li><a href="#kalimba">Pearl</a></li>
+			<li><a href="#kalimba">Hummingbird Heartbeat</a></li>
+			<li><a href="#kalimba">Not Like The Movies</a></li>
+			<li><a href="#kalimba">Roar</a></li>
+			<li><a href="#kalimba">Legendary Lovers</a></li>
+			<li><a href="#kalimba">Birthday</a></li>
+			<li><a href="#kalimba">Walking On Air</a></li>
+			<li><a href="#kalimba">Unconditionally</a></li>
+			<li><a href="#kalimba">Dark Horse</a></li>
+			<li><a href="#kalimba">This Is How We Do</a></li>
+			<li><a href="#kalimba">International Smile</a></li>
+			<li><a href="#kalimba">Ghost</a></li>
+			<li><a href="#kalimba">Love Me</a></li>
+			<li><a href="#kalimba">This Moment</a></li>
+			<li><a href="#kalimba">Double Rainbow</a></li>
+			<li><a href="#kalimba">By The Grace Of God</a></li>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul class="noBullet">
+                <li><a href="#" data-rel="back" data-icon="arrow-l" >Back</a></li>
+				<li><a href="#home" data-icon="home" >Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- ************** Album Page *************** -->
+<div data-role="page" id="album">
+	<div data-role="header">
+        <h1>Albums</h1>
+    </div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview" id="albums">
+			<li><a href="#teenDream">Teenage Dream</a></li>
+			<li><a href="#prism">Prism</a></li>
+			<li><a href="#kalimba">Red</a></li>
+			<li><a href="#kalimba">1989</a></li>
+			<li><a href="#kalimba">Halcyon</a></li>
+			<li><a href="#kalimba">Lights</a></li>
 		</ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
@@ -89,8 +159,8 @@
     </div>
 	<div data-role="main" class="ui-content">
 		<ul data-role="listview" id="tsList">
-			<li><a href="#prism">Red</a></li>
-			<li><a href="#prism">1989</a></li>
+			<li><a href="#kalimba">Red</a></li>
+			<li><a href="#kalimba">1989</a></li>
 		</ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
@@ -111,8 +181,8 @@
     </div>
 	<div data-role="main" class="ui-content">
 		<ul data-role="listview" id="egList">
-			<li><a href="#prism">Halcyon</a></li>
-			<li><a href="#prism">Lights</a></li>
+			<li><a href="#kalimba">Halcyon</a></li>
+			<li><a href="#kalimba">Lights</a></li>
 		</ul>
 	</div>
 	<div data-role="footer" data-position="fixed">
@@ -124,6 +194,8 @@
         </div>
     </div>
 </div>
+
+
 
 <!-- ************** Teenage Dream (Album) Page *************** -->
 <div data-role="page" id="teenDream">
@@ -426,7 +498,7 @@
 			</tr>
 			<tr>
 				<td class="trackTitle">
-					12) By The Grace Of God
+					13) By The Grace Of God
 				</td>
 				<td class="trackPlayer">
 					<audio controls id="graceGodPlayer">
@@ -460,10 +532,21 @@
     </div>
 
 	<div data-role="main" class="ui-content">
-		<audio controls>
-			<source src="Kalimba.mp3" type="audio/mpeg">	
-				Your browser does not support the audio element.
-		</audio>
+		<p>Sorry, this page is unavailable, here is something else instead...</p>
+		<table class="musicTable">
+			<tr>
+				<td class="trackTitle">
+					01) Kalimba
+				</td>
+				<td class="trackPlayer">
+					<audio controls>
+						<source src="Kalimba.mp3" type="audio/mpeg">	
+							Your browser does not support the audio element.
+					</audio>
+				</td>
+			</tr>
+		</table>
+		
 	</div>
 	
 	<div data-role="footer" data-position="fixed">

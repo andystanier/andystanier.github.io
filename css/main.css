@@ -68,12 +68,8 @@ h4{
 	text-align: center;
 	
 }
-.nameFooter{
+.nameFooter {
 	text-align: center;
-}
-
-.workExHead {
-	
 }
 
 .workExTitle .workExBody{
@@ -95,7 +91,7 @@ table{
 }
 
 table td{
-	width:auto;
+	width:20%;
 }
 
 th{
@@ -103,7 +99,7 @@ th{
 }
 
 .altern{
-	width: auto;
+	/*width: auto;*/
 	background: #dddddd;
 }
 
@@ -113,5 +109,8 @@ th{
 
 td:hover{
 	background: #cccccc;
-	
+}
+
+.intLink{
+	cursor: pointer;
 }
