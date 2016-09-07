@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	})
+	});
 
 	// When there's an internal link, go to that tab
 	$('.intLink').click(function(){
@@ -31,4 +31,30 @@ $(document).ready(function(){
 		$('.explainText').html(html);
 	});
 
-})
+
+
+	//Details page
+	$('#personalStatement').html(cvData.personalStatement);
+	//Skills page
+	$('#skillsText').html(cvData.skillsText);
+	$('#transferSkills').html(cvData.transferSkills);
+	//Experience
+	$('#molplexExpBody').html(cvData.molplexExpBody);
+	$('#betweenChemJobsExpBody').html(cvData.betweenChemJobsExpBody);
+	$('#eisaiExpBody').html(cvData.eisaiExpBody);
+	$('#charnwoodExpBody').html(cvData.charnwoodExpBody);
+	$('#alderleyExpBody').html(cvData.alderleyExpBody);
+	//Education
+	$('#uohEd').html(cvData.uohEd);
+	$('#uoyEd').html(cvData.uoyEd);
+	$('#tythEd').html(cvData.tythEd);
+	//Projects
+	$('#oscarProj').html(cvData.oscarProj);
+	$('#musicProj').html(cvData.musicProj);
+	$('#rodentProj').html(cvData.rodentProj);
+	$('#evoteProj').html(cvData.evoteProj);
+	$('#votewsProj').html(cvData.votewsProj);
+	$('#yahtzeeProj').html(cvData.yahtzeeProj);
+
+});
+

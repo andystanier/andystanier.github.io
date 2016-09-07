@@ -13,8 +13,8 @@ body{
 }
 
 ul.tabs{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -113,4 +113,12 @@ td:hover{
 
 .intLink{
 	cursor: pointer;
+}
+
+.courseNames, .strong{
+	font-weight: bold;
+}
+
+.courseNames {
+	font-style: italic;
 }
