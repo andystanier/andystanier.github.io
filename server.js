@@ -10,7 +10,7 @@ function respond404(response){
 function onRequest(request, response){
 	if(request.method == 'GET' && request.url == '/'){
 		response.writeHead(200, {"Content-Type" : "text/html"});
-		fs.createReadStream("./index_real.html").pipe(response);
+		fs.createReadStream("./index.html").pipe(response);
 		// response.writeHead(200, {"Content-Type" : "text/css"});
 		// fs.createReadStream("../andystanier.github.io/css/main.css").pipe(response);
 	}
