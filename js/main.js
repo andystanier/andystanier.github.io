@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 
 	// calculate how long I've been a SW dev
-	let yearsExperience = new Date().getFullYear() - 2016;
+	let yearsExperience = new Date().getFullYear() - 2016 -1;
 	$("#years-experience").text(yearsExperience);
 
 	//Details page
