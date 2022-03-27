@@ -7,10 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>Andy Stanier</title>
     <!-- Include the jQuery library -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Include the jQuery Mobile library -->
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script> -->
 <!---->
 </head>
@@ -35,11 +35,11 @@
 						<a id="email" href="mailto:andy.stanier@gmail.com">andy.stanier@gmail.com</a><br/>
 						<a id="website" href="http://www.andystanier.co.uk" target="_blank">www.andystanier.co.uk</a><br/>
 						<a id="linkedIn" href="http://www.linkedin.com/pub/andy-stanier/1b/8b0/b99" target="_blank">LinkedIn</a>
-						<h4 id="address">Macclesfield, Cheshire</h4>
+						<h4 id="address">Northwich, Cheshire</h4>
 					</div>
 					<div id="personalStatement">
 						<p>
-							Andy Stanier has over two years' experience as a software developer after having 
+							Andy Stanier has over <span id="years-experience"></span> years' experience as a software developer after having 
 							completed a master's degree in computer science with distinction.
 							With a background in chemistry and 15 years' experience in the pharmaceutical industry,
 							Andy is now a proficient and motivated developer using .NET framework software.
@@ -52,8 +52,7 @@
 							Hertfordshire, thus enabling him to gain a recognised formal qualification.
 						</p>
 						<p>
-							Once he had graduated, Andy found a job as a junior web developer using C#, MVC and T-SQL and has 
-							since been promoted out of the junior role to a fully-fledged developer. 
+							Once he had graduated, Andy found a job as a web developer using C#, JavaScript and T-SQL and is now a full stack software developer. 
 						</p>
 					</div>
 				</div>
@@ -81,7 +80,7 @@
 								<td id='csharp'>C#</td>
 								<td id='asp'>ASP.NET MVC and Webforms</td>
 								<td id='sql'>T-SQL</td>
-								<td id='vs'>MS Visual Studio 2013 - 2017</td>
+								<td id='vs'>MS Visual Studio 2013 - 2022</td>
 							</tr>
 							<tr>
 								<td id='git'>Git</td>
@@ -93,7 +92,8 @@
 							<tr class="altern">
 								<td id='html'>HTML</td>
 								<td id='css'>CSS</td>
-								<td id='razor'>Razor</td>
+								<!-- <td id='razor'>Razor</td> -->
+								<td id='powershell'>Powershell</td>
 								<td id='vscode'>Visual Studio Code</td>
 							</tr>
 							<tr>
@@ -102,12 +102,12 @@
 								<td id='json'>JSON</td>
 								<td id='jira'>JIRA</td>
 							</tr>
-							<tr class="altern">
+							<!-- <tr class="altern">
 								<td id='java'>Java</td>
 								<td id='c'>C</td>
 								<td id='python'>Python</td>
 								<td id='svn'>SVN</td>
-							</tr>
+							</tr> -->
 							<!-- <tr> -->
 								<!-- <td id='uml'>UML</td> -->
 								<!-- <td id='blu'>BlueJ</td> -->
@@ -166,6 +166,7 @@
 						<p id="ssmsText">For writing and executing SQL on backend databases.</p>
 						<p id="razorText">Syntax for generating HTML from C#.</p>
 						<p id="svnText">Subversion Version control software.</p>
+						<p id="powershellText">Used for console apps and scripts for automating tasks.</p>
 					</div>
 				</div>
 
@@ -307,20 +308,20 @@
 							complete; however, it demonstrates the use of jQuery mobile page structure and functions.
 							</span>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="https://jose.cs.herts.ac.uk/as15aic/final/" target="_blank">Rodent Rooms</a><span id="rodentProj"> - This was an end of course project to show the use of ASP.NET and C# for a user generated content website,
 							using an SQL database and server side user interface. </span>
-						</li>
+						</li> -->
 						<li>
 							<a href="projects/EVote/EVote.zip" target="_blank">EVote</a><span id="evoteProj"> - This was developed as part of the final project. It is a desktop Java application which simulates the creation
 							and running of an election with electronic voting.  The desktop program connects to an SQL database to collate votes.
 							</span>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="https://jose.cs.herts.ac.uk/as15aic/practice/" target="_blank">Election Verification Tool</a><span id="votewsProj"> - Also created for the final project, the website allows voters to verify that their vote has been
 							correctly cast.  The website uses ASP.NET, C# and SQL to create and control the content.
 							</span>
-						</li>
+						</li> -->
 						<li>
 							<a href="projects/Yahtzee/yahtzee.zip" target="_blank">Yahtzee Simulation</a><span id="yahtzeeProj"> - A Python 3 program written to simulate the rolling of 5 dice simultaneously until five-of-a-kind is rolled,
 							the process is repeated many times and the maximum, minimum and average number of rolls needed is recorded.
